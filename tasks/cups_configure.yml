@@ -1,6 +1,6 @@
 ---
 - name: Shutdown cups service(s)
-  service: 
+  service:
     name: "{{ item }}"
     state: stopped
   with_items:
@@ -38,7 +38,7 @@
   when: (cups_source_ssl_private_key_location|default("") != "") and (cups_source_ssl_public_key_location|default("") != "")
 
 - name: Start back up cups service(s)
-  service: 
+  service:
     name: "{{ item }}"
     state: started
   with_items:

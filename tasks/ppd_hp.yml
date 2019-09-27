@@ -1,6 +1,6 @@
 ---
 - name: Install HPLIP
-  apt: name=hplip state=latest
+  apt: name=hplip state=present
 
 - name: Copy hp-plugin-install.exp install script to {{ cups_tmp_location }}
   copy:

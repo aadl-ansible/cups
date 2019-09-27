@@ -1,6 +1,6 @@
 ---
 - name: Install xinetd for cups-lpd
-  apt: name=xinetd state=latest
+  apt: name=xinetd state=present
 
 - name: Create cups-lpd user - {{ cups_lpd_usn }}
   user:

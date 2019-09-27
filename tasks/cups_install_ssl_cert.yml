@@ -11,7 +11,7 @@
 - name: Copying the private key
   copy:
     src: "{{ cups_source_ssl_private_key_location }}"
-    dest: "{{ cups_etc_location }}/ssl/{{ansible_fqdn }}.key"
+    dest: "{{ cups_etc_location }}/ssl/{{ ansible_fqdn }}.key"
     owner: root
     group: root
     mode: 0600
